@@ -20,21 +20,21 @@ body{
     margin: 0px;
 }
 
-h2{
+#concept h2{
     font-size: 40px;
     font-family: Dancing Script;
 }
 
-p{
+#concept p{
     font-family: montserrat;
 }
 
-h2 , p{
+#concept h2 , p{
     color: rgba(226, 233, 192, 1);
     width: 70%;
 }
 
-img{
+#concept img{
     margin-top: 25px;
 }
 
