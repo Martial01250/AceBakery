@@ -1,0 +1,87 @@
+/* GLOBAL */
+/* ======================= */
+/* initialisation de la page */
+* {
+    margin: 0;
+    padding: 0;
+}
+:root {
+    font-size: 20px;
+}
+
+/* paramétrage général */
+body {
+    font-family: 'montserrat';
+}
+.container {
+    max-width: 75%;
+    margin: auto; /*centrage du container*/
+}
+h2 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
+h3 {
+    font-family: 'dancing script';
+    font-size: 1.8rem;
+}
+/* ======= FIN =========== */
+
+
+/* SECTION PRODUCTS */
+/* ======================= */
+#products {
+    background-color: #D2D2D2;
+    height: 85vh;
+    display: flex;
+    align-items: center;
+}
+.products h2 {
+    color: #1E0F1C;
+}
+.products h3 {
+    color: #955149;
+}
+.close-title {
+    line-height: 0.65;
+    margin-bottom: 50px;
+}
+.products-content {
+    height: 60vh;
+    display: flex;
+}
+.f2p {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30%;
+}
+.f2p img {
+    height: 47.5%;
+}
+.f3p {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 40%;
+    margin: 0 45.94px;
+}
+.f3p img {
+    height: 30%;
+}
+.box {
+    position: relative;
+}
+.box-content {
+    background-color: #fff;
+    position: absolute;
+    top: -100px;
+    bottom: 9px;
+    width: 100%;
+    text-align: center;
+}
+/* ======= FIN =========== */
+
+.test {
+    outline: red 1px solid;
+}
