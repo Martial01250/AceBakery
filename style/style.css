@@ -76,7 +76,7 @@ h3 {
 }
 .box {
     position: relative;
-    overflow: hidden;
+    overflow: hidden; /*cacher le surplus de la box (pour l'anim)*/
 }
 .box-content {
     position: absolute;
