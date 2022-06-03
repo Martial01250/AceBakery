@@ -50,13 +50,18 @@ h3 {
     height: 60vh;
     display: flex;
 }
+.box img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
 .f2p {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     width: 30%;
 }
-.f2p img {
+.f2p .box {
     height: 47.5%;
 }
 .f3p {
@@ -66,22 +71,35 @@ h3 {
     width: 40%;
     margin: 0 45.94px;
 }
-.f3p img {
+.f3p .box {
     height: 30%;
 }
 .box {
     position: relative;
+    overflow: hidden;
 }
 .box-content {
-    background-color: #fff;
     position: absolute;
-    top: -100px;
-    bottom: 9px;
+    top: 0;
+    left: 0;
+    height: 50%;
     width: 100%;
+    backdrop-filter: blur(4px); /*flou sur elmts de derriere*/
+    background-color: rgba(255, 255, 255, 0.4);
     text-align: center;
+    align-items: center;
+    transform: translateY(200%);
+    transition: 0.5s;
+}
+.box:hover .box-content {
+    transform: translateY(100%);
+}
+.box-content h4 {
+    font-size: 1rem;
+    margin: 10px 5px;
+}
+.box-content p {
+    font-size: 0.6rem;
+    margin: 10px 5px;
 }
 /* ======= FIN =========== */
-
-.test {
-    outline: red 1px solid;
-}
