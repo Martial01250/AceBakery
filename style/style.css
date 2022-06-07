@@ -20,8 +20,15 @@ body {
     font-family: 'montserrat';
 }
 .container {
-    max-width: 75%;
+    width: 75%;
     margin: auto; /*centrage du container*/
+}
+.flex{
+    display: flex;
+}
+.center {
+    align-items: center;
+    justify-content: center;
 }
 h2 {
     font-size: 2.5rem;
@@ -123,7 +130,7 @@ h1
 
 header
 {
-    background:linear-gradient(rgba(50, 50, 50, 0.43),rgba(50, 50, 50, 0.43)),url(./../images/bandeau-boulangerie.png) no-repeat;
+    background:linear-gradient(rgba(50, 50, 50, 0.43),rgba(50, 50, 50, 0.43)),url(./../images/bandeau-boulangerie.png) no-repeat fixed;
     background-size:100% 70vh;
     width: 100%;
     height: 70vh;
@@ -172,26 +179,21 @@ header
 
 /* CONCEPT */
 /* ======================= */
-.background-concept{
+#concept {
     background-color: rgba(30, 15, 28, 1);
     height: 70vh;
-    width: auto;
-    margin: 0px;
 }
-
 #concept h2{
     font-size: 1.5rem;
-    font-family: 'Dancing Script';
+    margin: 20px 0;
 }
-
 #concept p{
     font-size: 1rem;
     font-family: 'montserrat';
+    text-align: justify;
 }
-
 #concept h2 , p{
     color: rgba(226, 233, 192, 1);
-    width: 70%;
 }
 
 #concept img{
@@ -201,7 +203,8 @@ header
 .text-top{
     height: 50%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    margin-bottom: 50px;
 }
 
 .top , .bottum{
@@ -225,10 +228,19 @@ hr{
 .text-bottum{
     height: 50%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 /* ======= FIN =========== */
 
+.parafin {
+    background: url(../images/parafin.png) fixed;
+    height: 30vh;
+    justify-content: center;
+    align-items: center;
+}
+.parafin h2 {
+    color: #fff;
+}
 
 /* MOBILE VERSION */
 /* ======================= */
@@ -407,3 +419,107 @@ hr{
     }
 }
 /* ======= FIN =========== */
+/* SECTION PRODUCTS */
+/* ======================= */
+#products {
+    background-color: #D2D2D2;
+    height: 85vh;
+    display: flex;
+    align-items: center;
+}
+.products h2 {
+    color: #1E0F1C;
+}
+.products h3 {
+    color: #955149;
+}
+.close-title {
+    line-height: 0.65;
+    margin-bottom: 50px;
+}
+.products-content {
+    height: 60vh;
+    display: flex;
+}
+.box img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.f2p {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30%;
+}
+.f2p .box {
+    height: 47.5%;
+}
+.f3p {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 40%;
+    margin: 0 45.94px;
+}
+.f3p .box {
+    height: 30%;
+}
+.box {
+    position: relative;
+    overflow: hidden; /*cacher le surplus de la box (pour l'anim)*/
+}
+.box-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 50%;
+    width: 100%;
+    backdrop-filter: blur(4px); /*flou sur elmts de derriere*/
+    background-color: rgba(255, 255, 255, 0.4);
+    text-align: center;
+    align-items: center;
+    transform: translateY(200%);
+    transition: 0.5s;
+}
+.box:hover .box-content {
+    transform: translateY(100%);
+}
+.box-content h4 {
+    font-size: 1rem;
+    margin: 10px 5px;
+}
+.box-content p {
+    font-size: 0.6rem;
+    margin: 10px 5px;
+}
+/* ======= FIN =========== */
+
+
+/* VERSION MOBILE (XXXpx) */
+/* ======================= */
+@media screen and (max-width: 768px) {
+    .container {
+        max-width: 90%;
+        margin: auto; /*centrage du container*/
+    }
+    #products {
+        height: auto;
+        padding: 50px 0;
+    }
+    .products-content {
+        flex-direction: column;
+        height: auto;
+    }
+    .f2p, .f3p {
+        width: 100%;
+        margin: 5px 0;
+    }
+}
+/* ======= FIN =========== */
+
+
+
+.test {
+    outline: red solid 1px;
+}
