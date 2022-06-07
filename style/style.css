@@ -1,8 +1,47 @@
+/* GLOBAL */
+/* ======================= */
+/* initialisation de la page */
+* {
+    margin: 0;
+    padding: 0;
+}
+:root {
+    font-size: 20px;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+
+/* paramétrage général */
+body {
+    font-family: 'montserrat';
+}
+.container {
+    max-width: 75%;
+    margin: auto; /*centrage du container*/
+}
+h2 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
+h3 {
+    font-family: 'dancing script';
+    font-size: 1.8rem;
+}
+/* ======= FIN =========== */
+
+
+/* NAVBAR */
+/* ======================= */
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1rem 1.5rem;
+    background-color: #1E0F1C;
 }
 .hamburger {
     display: none;
@@ -14,7 +53,7 @@
     margin: 5px auto;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
-    background-color: #101010;
+    background-color: #fff;
 }
 .nav-menu {
     display: flex;
@@ -27,19 +66,19 @@
 }
 
 .nav-link{
-    font-size: 1.6rem;
+    font-size: 1rem;
     font-weight: 400;
-    color: #475569;
+    color: #fff;
 }
 
 .nav-link:hover{
-    color: #482ff7;
+    color: #955149;
 }
 
 .nav-logo {
     font-size: 2.1rem;
     font-weight: 500;
-    color: #482ff7;
+    color: #fff;    
 }
 
 @media only screen and (max-width: 768px) {
@@ -48,7 +87,7 @@
         left: -100%;
         top: 5rem;
         flex-direction: column;
-        background-color: #fff;
+        background-color: #1E0F1C;
         width: 100%;
         border-radius: 10px;
         text-align: center;
@@ -82,3 +121,4 @@
         transform: translateY(-8px) rotate(-45deg);
     }
 }
+/* ======= FIN =========== */
