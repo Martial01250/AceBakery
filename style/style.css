@@ -1,33 +1,3 @@
-/* GLOBAL */
-/* ======================= */
-/* initialisation de la page */
-* {
-    margin: 0;
-    padding: 0;
-}
-:root {
-    font-size: 20px;
-}
-
-/* paramétrage général */
-body {
-    font-family: 'montserrat';
-}
-.container {
-    max-width: 75%;
-    margin: auto; /*centrage du container*/
-}
-h2 {
-    font-size: 2.5rem;
-    text-transform: uppercase;
-}
-h3 {
-    font-family: 'dancing script';
-    font-size: 1.8rem;
-}
-/* ======= FIN =========== */
-
-
 /* SECTION PRODUCTS */
 /* ======================= */
 #products {
