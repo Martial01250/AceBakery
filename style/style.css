@@ -1,3 +1,103 @@
+{
+    margin: 0;
+}
+
+:root
+{
+    font-size: 20px;
+}
+.container
+{
+    
+    max-width: 75%;
+    margin: auto;    
+}
+ body
+ {
+     font-family: "Montserrat", helvetica, arial, sans-serif;
+ }
+
+ h2
+ {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    color: #ECF2D0;
+ }
+ 
+ h3
+ {
+    
+    font-family: 'dancing script'; 
+    font-size: 2.5rem;
+ }
+
+ .close-title 
+ {
+     line-height: 0.65;
+ }
+
+/*-----------HEADER--------------------------------------------------*/
+h1
+{
+    color: #ECF2D0;
+    font-size: 6rem;
+
+}
+
+.apropos p
+{
+    color: #ECF2D0;
+    font-size: 1.8rem;
+    text-align: center;    
+}
+
+.title
+{
+    text-align: center;
+    color: #ECF2D0;
+}
+
+header
+{
+    background:linear-gradient(rgba(50, 50, 50, 0.43),rgba(50, 50, 50, 0.43)),url(./../images/bandeau-boulangerie.png) no-repeat;
+    background-size:100% 70vh;
+    width: 100%;
+    height: 70vh;
+    box-sizing: border-box;   
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    text-shadow: #000 0px 0px 5px;
+}
+/* -----------FIN HEADER------------------------------------------- */
+
+
+/* -----------DEBUT A PROPOS--------------------------------------- */
+#apropos 
+{
+    height: 70vh;
+    background-color: #955149;
+}
+
+.boulanger
+{
+    width: 45%;
+    height: 60vh;
+    margin: 50px 0;
+}
+
+.txtapropos
+{
+    width: 40%;
+}
+
+.txtapropos p
+{
+    font-size: 1rem;
+    margin-top: 5%;
+}
+/*-----------FIN A PROPOS------------------------------------------*/
+
 /* GLOBAL */
 /* ======================= */
 /* initialisation de la page */
@@ -61,6 +161,10 @@ h3 {
     align-items: center;
 }
 
+
+
+
+
 .nav-item {
     margin-left: 5rem;
 }
@@ -91,8 +195,9 @@ h3 {
 .nav-link:hover:after { 
     transform: scaleX(1); 
 }
+/* ======= FIN =========== */
 
-@media only screen and (max-width: 768px) {
+@media  screen and (max-width: 768px) {
     .nav-menu {
         position: fixed;
         left: -100%;
@@ -132,4 +237,72 @@ h3 {
         transform: translateY(-8px) rotate(-45deg);
     }
 }
-/* ======= FIN =========== */
+
+
+/*-----------RESPONSIVE-------------------------------------------*/
+
+@media screen and (max-width: 768px)
+{
+    :root
+    {
+        font-size: 13px;
+    }
+    .container
+    {
+        max-width: 90%;
+        margin: auto;
+    }
+
+    h1
+    {
+        font-size: 4rem;
+        text-shadow: black 0px 0px 2px;
+    }
+
+    header
+    {
+        background-size:cover;
+        background-position:center;
+
+    }
+
+    header p
+    {
+        font-size: 1.2rem;
+        text-shadow: #000 0px 0px 5px;
+    }
+
+    #apropos 
+    {
+        height: auto;
+
+    }
+
+    .apropos
+    {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .txtapropos
+    {
+        width: 100%;
+    }
+
+    .boulanger
+    {
+        width: 100%;
+        height: auto;
+        margin: 60px 0;
+    }
+
+    h2
+    {
+        font-size: 2rem;
+    }
+
+    h3
+    {
+        font-size: 2rem;
+    }
+}
