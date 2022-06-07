@@ -41,7 +41,7 @@
 }
 
 hr{
-    rgba(226, 233, 192, 1);
+    color:  rgba(226, 233, 192, 1);
     margin-left: 5%;
     margin: 0;
     width: 232.8px;
@@ -272,8 +272,8 @@ header
     justify-content: space-between;
 }
 
-hr{
-    rgba(226, 233, 192, 1);
+hr {
+    color: rgba(226, 233, 192, 1);
     margin-left: 5%;
     margin: 0;
     width: 232.8px;
