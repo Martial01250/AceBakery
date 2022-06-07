@@ -589,6 +589,14 @@ form div {
     padding: 0;
     border-radius: 3px;
     cursor: pointer;
+    font-family: 'montserrat';
+    font-variant: small-caps;
+    font-weight: bold;
+}
+.btnsend:hover {
+    transform: scale(1.012);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+    filter: brightness(0.9);
 }
 .infos li {
     margin: 20px 0;
@@ -616,4 +624,12 @@ form div {
     width: 60%;
     border-radius: 3px;
     cursor: pointer;
+    font-family: 'montserrat';
+    font-variant: small-caps;
+    font-weight: bold;
+}
+.btn:hover {
+    transform: scale(1.012);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+    filter: brightness(0.9);
 }
