@@ -1,3 +1,5 @@
+
+/* SECTION PRODUCTS */
 .background-concept{
     background-color: rgba(30, 15, 28, 1);
     height: 70vh;
@@ -97,6 +99,7 @@ h3 {
 
 
 /* NAVBAR */
+
 /* ======================= */
 .navbar {
     display: flex;
