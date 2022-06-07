@@ -1,3 +1,65 @@
+.background-concept{
+    background-color: rgba(30, 15, 28, 1);
+    height: 70vh;
+    width: auto;
+    margin: 0px;
+}
+
+#concept h2{
+    font-size: 40px;
+    font-family: Dancing Script;
+}
+
+#concept p{
+    font-family: montserrat;
+}
+
+#concept h2 , p{
+    color: rgba(226, 233, 192, 1);
+    width: 70%;
+}
+
+#concept img{
+    margin-top: 25px;
+}
+
+.text-top{
+    height: 50%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.top , .bottum{
+    width: 25%;
+}
+
+.hr{
+    margin-left: 4%;
+    margin-right: 12%;
+    display: flex;
+    justify-content: space-between;
+}
+
+hr{
+    rgba(226, 233, 192, 1);
+    margin-left: 5%;
+    margin: 0;
+    width: 232.8px;
+}
+
+.text-bottum{
+    height: 50%;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
+
+
+
+
+
 /* GLOBAL */
 /* ======================= */
 /* initialisation de la page */
@@ -166,6 +228,65 @@ header
 /* ======= FIN =========== */
 
 
+/* CONCEPT */
+/* ======================= */
+.background-concept{
+    background-color: rgba(30, 15, 28, 1);
+    height: 70vh;
+    width: auto;
+    margin: 0px;
+}
+
+#concept h2{
+    font-size: 40px;
+    font-family: Dancing Script;
+}
+
+#concept p{
+    font-family: montserrat;
+}
+
+#concept h2 , p{
+    color: rgba(226, 233, 192, 1);
+    width: 70%;
+}
+
+#concept img{
+    margin-top: 25px;
+}
+
+.text-top{
+    height: 50%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.top , .bottum{
+    width: 25%;
+}
+
+.hr{
+    margin-left: 4%;
+    margin-right: 12%;
+    display: flex;
+    justify-content: space-between;
+}
+
+hr{
+    rgba(226, 233, 192, 1);
+    margin-left: 5%;
+    margin: 0;
+    width: 232.8px;
+}
+
+.text-bottum{
+    height: 50%;
+    display: flex;
+    justify-content: space-around;
+}
+/* ======= FIN =========== */
+
+
 /* MOBILE VERSION */
 /* ======================= */
 @media  screen and (max-width: 768px) {
@@ -271,6 +392,71 @@ header
     h3
     {
         font-size: 2rem;
+    }
+}
+@media (max-width: 768px){
+
+    .top , .bottum{
+        border-bottom: 1px solid rgba(226, 233, 192, 1) ;
+    }
+
+    .container{
+        max-width: 75%;
+        margin: auto;        
+    }
+
+    .background-concept{
+        background-color: rgba(30, 15, 28, 1);
+        height: 100%;
+        width: auto;
+    }
+
+    .text-top{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .text-bottum{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .topresp1{
+        width: 50%;
+        height: 50%;
+    }
+
+    .topresp2{
+        margin-left: 61%;
+        width: 50%;
+        height: 50%;
+    }
+
+    .topresp3{
+        width: 50%;
+        height: 50%;
+    }
+
+    .bottumresp1{
+        margin-left: 62%;
+        width: 50%;
+        height: 50%;
+    }
+
+    .bottumresp2{
+        width: 50%;
+        height: 50%;
+    }
+
+    .bottumresp3{
+        border: none;
+        margin-left: 62%;
+        width: 50%;
+        height: 50%;
+    }
+
+    .hr{
+        display: none;
     }
 }
 /* ======= FIN =========== */
