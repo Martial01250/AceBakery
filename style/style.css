@@ -80,6 +80,16 @@ h3 {
     font-weight: 500;
     color: #fff;    
 }
+.nav-link:after {
+    display:block;
+    content: '';
+    border-bottom: solid 2px #955149;  
+    transform: scaleX(0);  
+    transition: transform 250ms ease-in-out;
+  }
+.nav-link:hover:after { 
+    transform: scaleX(1); 
+}
 
 @media only screen and (max-width: 768px) {
     .nav-menu {
