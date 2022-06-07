@@ -1,98 +1,465 @@
+
 /* SECTION PRODUCTS */
-/* ======================= */
-#products {
-    background-color: #D2D2D2;
-    height: 85vh;
-    display: flex;
-    align-items: center;
+.background-concept{
+    background-color: rgba(30, 15, 28, 1);
+    height: 70vh;
+    width: auto;
+    margin: 0px;
 }
-.products h2 {
-    color: #1E0F1C;
+
+#concept h2{
+    font-size: 40px;
+    font-family: Dancing Script;
 }
-.products h3 {
-    color: #955149;
+
+#concept p{
+    font-family: montserrat;
 }
-.close-title {
-    line-height: 0.65;
-    margin-bottom: 50px;
+
+#concept h2 , p{
+    color: rgba(226, 233, 192, 1);
+    width: 70%;
 }
-.products-content {
-    height: 60vh;
-    display: flex;
+
+#concept img{
+    margin-top: 25px;
 }
-.box img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-}
-.f2p {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 30%;
-}
-.f2p .box {
-    height: 47.5%;
-}
-.f3p {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 40%;
-    margin: 0 45.94px;
-}
-.f3p .box {
-    height: 30%;
-}
-.box {
-    position: relative;
-    overflow: hidden; /*cacher le surplus de la box (pour l'anim)*/
-}
-.box-content {
-    position: absolute;
-    top: 0;
-    left: 0;
+
+.text-top{
     height: 50%;
-    width: 100%;
-    backdrop-filter: blur(4px); /*flou sur elmts de derriere*/
-    background-color: rgba(255, 255, 255, 0.4);
-    text-align: center;
-    align-items: center;
-    transform: translateY(200%);
-    transition: 0.5s;
+    display: flex;
+    justify-content: space-around;
 }
-.box:hover .box-content {
-    transform: translateY(100%);
+
+.top , .bottum{
+    width: 25%;
 }
-.box-content h4 {
-    font-size: 1rem;
-    margin: 10px 5px;
+
+.hr{
+    margin-left: 4%;
+    margin-right: 12%;
+    display: flex;
+    justify-content: space-between;
 }
-.box-content p {
-    font-size: 0.6rem;
-    margin: 10px 5px;
+
+hr{
+    color:  rgba(226, 233, 192, 1);
+    margin-left: 5%;
+    margin: 0;
+    width: 232.8px;
+}
+
+.text-bottum{
+    height: 50%;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
+
+
+
+
+
+/* GLOBAL */
+/* ======================= */
+/* initialisation de la page */
+* {
+    margin: 0;
+    padding: 0;
+}
+:root {
+    font-size: 20px;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+
+/* paramétrage général */
+body {
+    font-family: 'montserrat';
+}
+.container {
+    max-width: 75%;
+    margin: auto; /*centrage du container*/
+}
+h2 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
+h3 {
+    font-family: 'dancing script';
+    font-size: 1.8rem;
 }
 /* ======= FIN =========== */
 
 
-/* VERSION MOBILE (XXXpx) */
+/* NAVBAR */
+
 /* ======================= */
-@media screen and (max-width: 768px) {
-    .container {
-        max-width: 90%;
-        margin: auto; /*centrage du container*/
-    }
-    #products {
-        height: auto;
-        padding: 50px 0;
-    }
-    .products-content {
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    background-color: #1E0F1C;
+}
+.hamburger {
+    display: none;
+}
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #fff;
+}
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-item {
+    margin-left: 5rem;
+}
+
+.nav-link{
+    font-size: 1rem;
+    font-weight: 400;
+    color: #fff;
+    font-variant: small-caps;
+}
+
+.nav-link:hover{
+    color: #955149;
+}
+
+.nav-logo {
+    font-size: 2.1rem;
+    font-weight: 500;
+    color: #fff;    
+}
+.nav-link:after {
+    display:block;
+    content: '';
+    border-bottom: solid 2px #955149;  
+    transform: scaleX(0);  
+    transition: transform 250ms ease-in-out;
+  }
+.nav-link:hover:after { 
+    transform: scaleX(1); 
+}
+/* ======= FIN =========== */
+
+/* HEADER */
+/* ======================= */
+h1
+{
+    color: #ECF2D0;
+    font-size: 6rem;
+
+}
+header h2
+{
+    color: #ECF2D0;
+}
+
+.apropos p
+{
+    color: #ECF2D0;
+    font-size: 1.8rem;
+    text-align: center;    
+}
+
+.title
+{
+    text-align: center;
+    color: #ECF2D0;
+}
+
+header
+{
+    background:linear-gradient(rgba(50, 50, 50, 0.43),rgba(50, 50, 50, 0.43)),url(./../images/bandeau-boulangerie.png) no-repeat;
+    background-size:100% 70vh;
+    width: 100%;
+    height: 70vh;
+    box-sizing: border-box;   
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    text-shadow: #000 0px 0px 5px;
+}
+/* ======= FIN =========== */
+
+
+/* DEBUT A PROPOS */
+/* ======================= */
+#apropos 
+{
+    height: 70vh;
+    background-color: #955149;
+}
+
+.boulanger
+{
+    width: 45%;
+    height: 60vh;
+    margin: 50px 0;
+}
+
+.txtapropos
+{
+    width: 40%;
+}
+
+.txtapropos p
+{
+    font-size: 1rem;
+    margin-top: 5%;
+}
+.apropos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* ======= FIN =========== */
+
+
+/* CONCEPT */
+/* ======================= */
+.background-concept{
+    background-color: rgba(30, 15, 28, 1);
+    height: 70vh;
+    width: auto;
+    margin: 0px;
+}
+
+#concept h2{
+    font-size: 40px;
+    font-family: Dancing Script;
+}
+
+#concept p{
+    font-family: montserrat;
+}
+
+#concept h2 , p{
+    color: rgba(226, 233, 192, 1);
+    width: 70%;
+}
+
+#concept img{
+    margin-top: 25px;
+}
+
+.text-top{
+    height: 50%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.top , .bottum{
+    width: 25%;
+}
+
+.hr{
+    margin-left: 4%;
+    margin-right: 12%;
+    display: flex;
+    justify-content: space-between;
+}
+
+hr {
+    color: rgba(226, 233, 192, 1);
+    margin-left: 5%;
+    margin: 0;
+    width: 232.8px;
+}
+
+.text-bottum{
+    height: 50%;
+    display: flex;
+    justify-content: space-around;
+}
+/* ======= FIN =========== */
+
+
+/* MOBILE VERSION */
+/* ======================= */
+@media  screen and (max-width: 768px) {
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 5rem;
         flex-direction: column;
-        height: auto;
-    }
-    .f2p, .f3p {
+        background-color: #1E0F1C;
         width: 100%;
-        margin: 5px 0;
+        border-radius: 10px;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .nav-item {
+        margin: 2.5rem 0;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+}
+
+@media screen and (max-width: 768px)
+{
+    :root
+    {
+        font-size: 13px;
+    }
+    .container
+    {
+        max-width: 90%;
+        margin: auto;
+    }
+
+    h1
+    {
+        font-size: 4rem;
+        text-shadow: black 0px 0px 2px;
+    }
+
+    header
+    {
+        background-size:cover;
+        background-position:center;
+
+    }
+
+    header p
+    {
+        font-size: 1.2rem;
+        text-shadow: #000 0px 0px 5px;
+    }
+
+    #apropos 
+    {
+        height: auto;
+
+    }
+
+    .apropos
+    {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .txtapropos
+    {
+        width: 100%;
+    }
+
+    .boulanger
+    {
+        width: 100%;
+        height: auto;
+        margin: 60px 0;
+    }
+
+    h2
+    {
+        font-size: 2rem;
+    }
+
+    h3
+    {
+        font-size: 2rem;
+    }
+}
+@media (max-width: 768px){
+
+    .top , .bottum{
+        border-bottom: 1px solid rgba(226, 233, 192, 1) ;
+    }
+
+    .container{
+        max-width: 75%;
+        margin: auto;        
+    }
+
+    .background-concept{
+        background-color: rgba(30, 15, 28, 1);
+        height: 100%;
+        width: auto;
+    }
+
+    .text-top{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .text-bottum{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .topresp1{
+        width: 50%;
+        height: 50%;
+    }
+
+    .topresp2{
+        margin-left: 61%;
+        width: 50%;
+        height: 50%;
+    }
+
+    .topresp3{
+        width: 50%;
+        height: 50%;
+    }
+
+    .bottumresp1{
+        margin-left: 62%;
+        width: 50%;
+        height: 50%;
+    }
+
+    .bottumresp2{
+        width: 50%;
+        height: 50%;
+    }
+
+    .bottumresp3{
+        border: none;
+        margin-left: 62%;
+        width: 50%;
+        height: 50%;
+    }
+
+    .hr{
+        display: none;
     }
 }
 /* ======= FIN =========== */
