@@ -32,16 +32,16 @@
       <a href="#" class="nav-logo">AceBakery.</a>
       <ul class="nav-menu">
         <li class="nav-item">
-          <a href="#" class="nav-link">à propos</a>
+          <a href="#apropos" class="nav-link">à propos</a>
         </li>
         <li class="nav-item">
-          <a href="#" class="nav-link">concept</a>
+          <a href="#concept" class="nav-link">concept</a>
         </li>
         <li class="nav-item">
-          <a href="#" class="nav-link">produits</a>
+          <a href="#products" class="nav-link">produits</a>
         </li>
         <li class="nav-item">
-          <a href="#" class="nav-link">contact</a>
+          <a href="#footer" class="nav-link">contact</a>
         </li>
       </ul>
       <div class="hamburger">
@@ -283,6 +283,45 @@
           </div>
       </section>
     </main>
+
+    <footer id="footer" class="flex">
+        <div class="container footer">
+            <div class="close-title">
+                <h3>lorem ipsum</h3>
+                <h2>contact</h2>
+            </div>
+            <div class="flex spc-btw">
+                <div class="infos">
+                    <ul>
+                        <li>01 40 47 09 26</li>
+                        <li><a href = "mailto: contact@ace-bakery.fr">contact@ace-bakery.fr</a></li>
+                        <li>66 rue du paradis, <br> Miribel 01667</li>
+                    </ul>
+                    <button class="btn">horaires</button>
+                </div>
+                <!-- formulaire de contact -->
+                <div class="form">
+                    <form>
+                        <div>
+                            <input type="text" name="name" placeholder="Nom" required>
+                        </div>
+                        <div>
+                            <input type="text" name="prenom" placeholder="Prénom" required>
+                        </div>
+                        <div>
+                            <input type="email" name="email" placeholder="Email" required>
+                        </div>
+                        <div>
+                            <textarea id="msg" name="user_message" placeholder="Votre message..."></textarea>
+                        </div>
+                        <input type="submit" class="btnsend">
+                        <!-- <input type="submit" value="annuler"> -->
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
     <script src="./script/script.js"></script>
   </body>
 </html>
