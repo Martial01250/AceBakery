@@ -31,6 +31,9 @@ h3 {
     font-family: 'dancing script';
     font-size: 1.8rem;
 }
+.close-title {
+    line-height: 0.65;
+}
 /* ======= FIN =========== */
 
 
@@ -100,16 +103,16 @@ h1
     font-size: 6rem;
 
 }
-header h2
+.txtapropos h2
 {
     color: #ECF2D0;
-}
+} 
 
 .apropos p
 {
     color: #ECF2D0;
     font-size: 1.8rem;
-    text-align: center;    
+    text-align: justify;    
 }
 
 .title
@@ -249,6 +252,10 @@ header
     {
         flex-direction: column;
         text-align: center;
+    }
+
+    .apropos p {
+        text-align: center; 
     }
 
     .txtapropos
