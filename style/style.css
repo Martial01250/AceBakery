@@ -489,6 +489,7 @@ hr{
 .box {
     position: relative;
     overflow: hidden; /*cacher le surplus de la box (pour l'anim)*/
+    box-shadow: #1E0F1C 3px 3px 15px;
 }
 .box-content {
     position: absolute;
