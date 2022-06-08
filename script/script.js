@@ -15,3 +15,13 @@ function closeMenu() {
     hamburger.classList.remove("active");
     navMenu.classList.remove("active");
 }
+
+// horaires
+
+function openHoraires() {
+    document.getElementById('horaires').style.display = "block";
+}
+
+function closeHoraires() {
+    document.getElementById('horaires').style.display = "none";
+}

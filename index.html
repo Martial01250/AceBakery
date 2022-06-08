@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style/style.css" />
-    <link rel="stylesheet" href="./style/style.css" />
+    <link rel="stylesheet" href="./style/popup.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
@@ -15,44 +15,35 @@
       rel="stylesheet"
     />
     <title>Document</title>
-    <link rel="stylesheet" href="./style/style.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
   </head>
 
   <body>
-    <!-- NAVBAR -->
-    <nav class="navbar">
-      <a href="#" class="nav-logo">AceBakery.</a>
-      <ul class="nav-menu">
-        <li class="nav-item">
-          <a href="#apropos" class="nav-link">à propos</a>
-        </li>
-        <li class="nav-item">
-          <a href="#concept" class="nav-link">concept</a>
-        </li>
-        <li class="nav-item">
-          <a href="#products" class="nav-link">produits</a>
-        </li>
-        <li class="nav-item">
-          <a href="#footer" class="nav-link">contact</a>
-        </li>
-      </ul>
-      <div class="hamburger">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
-      </div>
-    </nav>
 
     <!-- HEADER -->
     <header>
+      <!-- NAVBAR -->
+      <nav class="navbar">
+        <a href="#" class="nav-logo">AceBakery.</a>
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="#apropos" class="nav-link">à propos</a>
+          </li>
+          <li class="nav-item">
+            <a href="#concept" class="nav-link">concept</a>
+          </li>
+          <li class="nav-item">
+            <a href="#products" class="nav-link">produits</a>
+          </li>
+          <li class="nav-item">
+            <a href="#footer" class="nav-link">contact</a>
+          </li>
+        </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
       <div class="title">
         <h1>Ace Bakery</h1>
         <p>Chaque jour, s'engager par amour du pain.</p>
@@ -107,13 +98,15 @@
                   </p>
                 </div>
 
-                <div class="top topresp2">
-                  <img src="./images/cake.png" alt="logo de gateau" />
-                  <h2>Lorem ipsum</h2>
-                  <p>
-                    dolor sit amet. Eum explicabo eligendi ut omnis
-                    necessitatibus ut quaerat nihil
-                  </p>
+                <div class="flex end">
+                  <div class="top topresp2">
+                    <img src="./images/cake.png" alt="logo de gateau" />
+                    <h2>Lorem ipsum</h2>
+                    <p>
+                      dolor sit amet. Eum explicabo eligendi ut omnis
+                      necessitatibus ut quaerat nihil
+                    </p>
+                  </div>
                 </div>
 
                 <div class="top topresp3">
@@ -133,13 +126,15 @@
               </div>
 
               <div class="text-bottum">
-                <div class="bottum bottumresp1">
-                  <img src="./images/E0CAbread.png" alt="logo de bonbon" />
-                  <h2>Lorem ipsum</h2>
-                  <p>
-                    dolor sit amet. Eum explicabo eligendi ut omnis
-                    necessitatibus ut quaerat nihil
-                  </p>
+                <div class="flex end">
+                  <div class="bottum bottumresp1">
+                    <img src="./images/E0CAbread.png" alt="logo de bonbon" />
+                    <h2>Lorem ipsum</h2>
+                    <p>
+                      dolor sit amet. Eum explicabo eligendi ut omnis
+                      necessitatibus ut quaerat nihil
+                    </p>
+                  </div>
                 </div>
 
                 <div class="bottum bottumresp2">
@@ -151,13 +146,15 @@
                   </p>
                 </div>
 
-                <div class="bottum bottumresp3">
-                  <img src="./images/sucette.png" alt="logo de bonbon" />
-                  <h2>Lorem ipsum</h2>
-                  <p>
-                    dolor sit amet. Eum explicabo eligendi ut omnis
-                    necessitatibus ut quaerat nihil
-                  </p>
+                <div class="flex end">
+                  <div class="bottum bottumresp3">
+                    <img src="./images/sucette.png" alt="logo de bonbon" />
+                    <h2>Lorem ipsum</h2>
+                    <p>
+                      dolor sit amet. Eum explicabo eligendi ut omnis
+                      necessitatibus ut quaerat nihil
+                    </p>
+                  </div>
                 </div>
               </div>
         </div>
@@ -297,7 +294,9 @@
                         <li><a href = "mailto: contact@ace-bakery.fr">contact@ace-bakery.fr</a></li>
                         <li>66 rue du paradis, <br> Miribel 01667</li>
                     </ul>
-                    <button class="btn">horaires</button>
+                    <button class="btn" onclick="openHoraires()">horaires</button>
+                    <div id="horaires" onclick="closeHoraires()">
+                    </div>
                 </div>
                 <!-- formulaire de contact -->
                 <div class="form">
