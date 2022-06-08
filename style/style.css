@@ -407,6 +407,7 @@ hr{
         width: 50%;
         height: 50%;
         text-align: end;
+        margin-left: 50%;
     }
 
     .topresp3{
@@ -418,6 +419,7 @@ hr{
         width: 50%;
         height: 50%;
         text-align: end;
+        margin-left: 50%;
     }
 
     .bottumresp2{
@@ -430,6 +432,7 @@ hr{
         width: 50%;
         height: 50%;
         text-align: end;
+        margin-left: 50%;
     }
 
     .hr{
@@ -536,6 +539,15 @@ hr{
     .f2p, .f3p {
         width: 100%;
         margin: 5px 0;
+    }
+    .f2p .box {
+        margin: 10px 0;
+    }
+    .f3p .box {
+        margin: 10px 0;
+    }
+    .parafin {
+        height: 20vh;
     }
 }
 /* ======= FIN =========== */
