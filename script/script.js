@@ -25,3 +25,23 @@ function openHoraires() {
 function closeHoraires() {
     document.getElementById('horaires').style.display = "none";
 }
+
+
+// anime scroll
+
+const slidingAnime = document.querySelector('.slideIn')
+
+window.addEventListener('scroll', () => {
+   
+    const {scrollTop, clientHeight} =
+    document.documentElement;
+
+    const topElemetToTopViewport =
+     slidingAnime.getBoundingClientRect().top;
+
+
+     if(scrollTop > (scrollTop + topElemetToTopViewport).toFixed() -
+     clientHeight * 0.80) {
+         slidingAnime.classList.add('start')
+     }
+})
