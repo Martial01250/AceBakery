@@ -440,6 +440,21 @@ form div {
     height: 583px;
     backdrop-filter: blur(4px);
     background-color: #ECF2D02f;
+    animation: pop 300ms ease;
+}
+@keyframes pop {
+    from {
+        transform: scale(0%);
+    }
+    92% {
+        transform: scale(102.5%);
+    }
+    /* 98% {
+        transform: scale(95%);
+    } */
+    100% {
+        transform: scale(100%);
+    }
 }
 /* ======= FIN =========== */
 
