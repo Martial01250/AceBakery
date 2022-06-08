@@ -443,16 +443,16 @@ form div {
 }
 @keyframes pop {
     from {
-        transform: scale(0%);
+        transform: scale(0);
     }
     92% {
-        transform: scale(102.5%);
+        transform: scale(1.025);
     }
     /* 98% {
         transform: scale(95%);
     } */
     100% {
-        transform: scale(100%);
+        transform: scale(1);
     }
 }
 /* ======= FIN =========== */
