@@ -639,6 +639,12 @@ form div {
     .f3p .box {
         margin: 10px 0;
     }
+    .box-content h4 {
+        font-size: 1.7rem;
+    }
+    .box-content p {
+        font-size: 1rem;
+    }
     /* ==FIN== */
 
 
