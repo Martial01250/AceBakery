@@ -34,7 +34,3 @@ elements.forEach(element => {
     element.classList.remove('play');
   });
 });
-
-
-
-
