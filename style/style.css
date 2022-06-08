@@ -141,6 +141,7 @@ h3 {
 /* NAVBAR */
 /* ======================= */
 .navbar {
+    position: fixed;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -516,6 +517,7 @@ form div {
     backdrop-filter: blur(4px);
     background-color: #ECF2D02f;
     animation: pop 300ms ease;
+    z-index: 2;
 }
 @keyframes pop {
     from {
