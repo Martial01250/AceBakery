@@ -380,11 +380,6 @@ hr{
         border-bottom: 1px solid rgba(226, 233, 192, 1) ;
     }
 
-    .container{
-        max-width: 75%;
-        margin: auto;        
-    }
-
     .background-concept{
         background-color: rgba(30, 15, 28, 1);
         height: 100%;
