@@ -296,20 +296,23 @@
                 <!-- formulaire de contact -->
                 <div class="form">
                     <form>
-                        <div>
-                            <input type="text" name="name" placeholder="Nom" required>
+                        <div class="field">
+                          <input type="text" id="name" required autocomplete="off">
+                          <label for="name" title="Nom" data-title="Nom"></label>
                         </div>
-                        <div>
-                            <input type="text" name="prenom" placeholder="Prénom" required>
+                        <div class="field">
+                          <input type="text" id="prenom" required autocomplete="off">
+                          <label for="prenom" title="Prénom" data-title="Prénom"></label>
                         </div>
-                        <div>
-                            <input type="email" name="email" placeholder="Email" required>
+                        <div class="field">
+                          <input type="email" id="email" required autocomplete="off">
+                          <label for="email" title="Email" data-title="Email"></label>
                         </div>
-                        <div>
-                            <textarea id="msg" name="user_message" placeholder="Votre message..."></textarea>
+                        <div class="field">
+                          <textarea id="msg"></textarea>
+                          <label for="msg" title="Message..." data-title="Message"></label>
                         </div>
                         <input type="submit" class="btnsend">
-                        <!-- <input type="submit" value="annuler"> -->
                     </form>
                 </div>
             </div>
