@@ -237,20 +237,6 @@ hr {
 /* ======= FIN =========== */
 
 
-/* SECTION PARAFIN */
-/* ======================= */
-.parafin {
-    background: url(../images/parafin.png) fixed;
-    height: 30vh;
-    justify-content: center;
-    align-items: center;
-}
-.parafin h2 {
-    color: #fff;
-}
-/* ======= FIN =========== */
-
-
 /* SECTION PRODUCTS */
 /* ======================= */
 #products {
@@ -328,6 +314,20 @@ hr {
 .box-content p {
     font-size: 0.6rem;
     margin: 10px 5px;
+}
+/* ======= FIN =========== */
+
+
+/* SECTION PARAFIN */
+/* ======================= */
+.parafin {
+    background: url(../images/parafin.png) fixed;
+    height: 30vh;
+    justify-content: center;
+    align-items: center;
+}
+.parafin h2 {
+    color: #1E0F1C;
 }
 /* ======= FIN =========== */
 
