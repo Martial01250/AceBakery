@@ -36,9 +36,6 @@ html {
     align-items: center;
     justify-content: center;
 }
-.end {
-    justify-content: end;
-}
 h2 {
     font-size: 2.5rem;
     text-transform: uppercase;
@@ -213,7 +210,9 @@ header
 #concept img{
     margin-top: 25px;
 }
-
+.end {
+    display: block;
+}
 .text-top{
     height: 50%;
     display: flex;
@@ -238,7 +237,6 @@ hr{
     margin: 0;
     width: 232.8px;
 }
-
 .text-bottum{
     height: 50%;
     display: flex;
@@ -389,7 +387,6 @@ hr{
         height: 100%;
         width: auto;
     }
-
     .text-top{
         display: flex;
         flex-direction: column;
@@ -641,6 +638,7 @@ form div {
 #horaires {
     /* display: none; */
     position: fixed;
+    display: none;
     top: 200px;
     left: 680px;
     background: url(../images/horaire.png);
