@@ -47,6 +47,18 @@ h3 {
 .close-title {
     line-height: 0.65;
 }
+/* anime scroll */
+.slideIn{
+    transform: translateY(40%);
+    opacity: 0;
+    transition: transform 0.6s ease-in-out,
+    opacity 0.6s ease-in-out;
+}
+
+.slideIn.start{
+    transform: translateY(0%);
+    opacity: 1;
+}
 /* ======= FIN =========== */
 
 
@@ -84,18 +96,15 @@ h3 {
 .nav-item {
     margin-left: 5rem;
 }
-
 .nav-link{
     font-size: 1rem;
     font-weight: 400;
     color: #fff;
     font-variant: small-caps;
 }
-
 .nav-link:hover{
     color: #955149;
 }
-
 .nav-logo {
     font-size: 2.1rem;
     font-weight: 500;
@@ -113,34 +122,26 @@ h3 {
 }
 /* ======= FIN =========== */
 
+
 /* HEADER */
 /* ======================= */
-h1
-{
+h1 {
     color: #ECF2D0;
     font-size: 6rem;
-
 }
-.txtapropos h2
-{
+.txtapropos h2 {
     color: #ECF2D0;
 } 
-
-.apropos p
-{
+.apropos p {
     color: #ECF2D0;
     font-size: 1.8rem;
     text-align: justify;    
 }
-
-.title
-{
+.title {
     text-align: center;
     color: #ECF2D0;
 }
-
-header
-{
+header {
     background:linear-gradient(rgba(50, 50, 50, 0.43),rgba(50, 50, 50, 0.43)),url(./../images/bandeau-boulangerie.png) no-repeat fixed;
     background-size:100% 70vh;
     width: 100%;
@@ -156,26 +157,19 @@ header
 
 /* DEBUT A PROPOS */
 /* ======================= */
-#apropos 
-{
+#apropos {
     height: 70vh;
     background-color: #955149;
 }
-
-.boulanger
-{
+.boulanger {
     width: 45%;
     height: 60vh;
     margin: 50px 0;
 }
-
-.txtapropos
-{
+.txtapropos {
     width: 40%;
 }
-
-.txtapropos p
-{
+.txtapropos p {
     width: 100%;
     font-size: 1rem;
     margin-top: 5%;
@@ -194,44 +188,42 @@ header
     background-color: rgba(30, 15, 28, 1);
     height: 70vh;
 }
-#concept h2{
+#concept h2 {
     font-size: 1.5rem;
     margin: 20px 0;
 }
-#concept p{
+#concept p {
     font-size: 1rem;
     font-family: 'montserrat';
     text-align: justify;
 }
-#concept h2 , p{
+#concept h2 , p {
     color: rgba(226, 233, 192, 1);
 }
-
-#concept img{
+#concept img {
     margin-top: 25px;
 }
 .end {
     display: block;
 }
-.text-top{
+.text-top {
     height: 50%;
     display: flex;
     justify-content: space-between;
     margin-bottom: 50px;
 }
 
-.top , .bottum{
+.top , .bottum {
     width: 25%;
 }
 
-.hr{
+.hr {
     margin-left: 4%;
     margin-right: 12%;
     display: flex;
     justify-content: space-between;
 }
-
-hr{
+hr {
     color: rgba(226, 233, 192, 1);
     margin-left: 5%;
     margin: 0;
@@ -244,6 +236,9 @@ hr{
 }
 /* ======= FIN =========== */
 
+
+/* SECTION PARAFIN */
+/* ======================= */
 .parafin {
     background: url(../images/parafin.png) fixed;
     height: 30vh;
@@ -253,193 +248,9 @@ hr{
 .parafin h2 {
     color: #fff;
 }
-
-
-/* MOBILE VERSION */
-/* ======================= */
-@media  screen and (max-width: 768px) {
-    .nav-menu {
-        position: fixed;
-        left: -100%;
-        top: 5rem;
-        flex-direction: column;
-        background-color: #1E0F1C;
-        width: 100%;
-        border-radius: 10px;
-        text-align: center;
-        transition: 0.3s;
-        box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
-    }
-
-    .nav-menu.active {
-        left: 0;
-    }
-
-    .nav-item {
-        margin: 2.5rem 0;
-    }
-
-    .hamburger {
-        display: block;
-        cursor: pointer;
-    }
-
-    .hamburger.active .bar:nth-child(2) {
-        opacity: 0;
-    }
-
-    .hamburger.active .bar:nth-child(1) {
-        transform: translateY(8px) rotate(45deg);
-    }
-
-    .hamburger.active .bar:nth-child(3) {
-        transform: translateY(-8px) rotate(-45deg);
-    }
-}
-
-@media screen and (max-width: 768px)
-{
-    :root
-    {
-        font-size: 13px;
-    }
-    .container
-    {
-        max-width: 90%;
-        margin: auto;
-    }
-    #apropos {
-        padding-bottom: 50px;
-    }
-    h1
-    {
-        font-size: 4rem;
-        text-shadow: black 0px 0px 2px;
-    }
-
-    header
-    {
-        background-size:cover;
-        background-position:center;
-
-    }
-
-    header p
-    {
-        font-size: 1.2rem;
-        text-shadow: #000 0px 0px 5px;
-    }
-
-    #apropos 
-    {
-        height: auto;
-
-    }
-
-    .apropos
-    {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .apropos p {
-        text-align: center; 
-    }
-
-    .txtapropos
-    {
-        width: 100%;
-    }
-
-    .boulanger
-    {
-        width: 100%;
-        height: auto;
-        margin: 60px 0;
-    }
-
-    h2
-    {
-        font-size: 2rem;
-    }
-
-    h3
-    {
-        font-size: 2rem;
-    }
-}
-@media (max-width: 768px){
-
-    #concept {
-        height: auto;
-        padding: 30px 0 50px 0;
-    }
-    #concept p {
-        text-align: center;
-        margin-bottom: 50px;
-    }
-    .top , .bottum{
-        border-bottom: 1px solid rgba(226, 233, 192, 1) ;
-    }
-
-    .background-concept{
-        background-color: rgba(30, 15, 28, 1);
-        height: 100%;
-        width: auto;
-    }
-    .text-top{
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-    }
-
-    .text-bottum{
-        display: flex;
-        flex-direction: column;
-    }
-
-    .topresp1{
-        width: 50%;
-        height: 50%;
-    }
-
-    .topresp2{
-        width: 50%;
-        height: 50%;
-        text-align: end;
-        margin-left: 50%;
-    }
-
-    .topresp3{
-        width: 50%;
-        height: 50%;
-    }
-
-    .bottumresp1{
-        width: 50%;
-        height: 50%;
-        text-align: end;
-        margin-left: 50%;
-    }
-
-    .bottumresp2{
-        width: 50%;
-        height: 50%;
-    }
-
-    .bottumresp3{
-        border: none;
-        width: 50%;
-        height: 50%;
-        text-align: end;
-        margin-left: 50%;
-    }
-
-    .hr{
-        display: none;
-    }
-}
 /* ======= FIN =========== */
+
+
 /* SECTION PRODUCTS */
 /* ======================= */
 #products {
@@ -521,37 +332,8 @@ hr{
 /* ======= FIN =========== */
 
 
-/* VERSION MOBILE (XXXpx) */
+/* SECTION FOOTER */
 /* ======================= */
-@media screen and (max-width: 768px) {
-    .container {
-        max-width: 90%;
-        margin: auto; /*centrage du container*/
-    }
-    #products {
-        height: auto;
-        padding: 50px 0;
-    }
-    .products-content {
-        flex-direction: column;
-        height: auto;
-    }
-    .f2p, .f3p {
-        width: 100%;
-        margin: 5px 0;
-    }
-    .f2p .box {
-        margin: 10px 0;
-    }
-    .f3p .box {
-        margin: 10px 0;
-    }
-    .parafin {
-        height: 20vh;
-    }
-}
-/* ======= FIN =========== */
-
 footer {
     background-color: #1e0f1c;
     height: 70vh;
@@ -562,7 +344,6 @@ footer h3 {
 .test {
     outline: red solid 1px;
 }
-
 .footer {
     justify-content: space-between;
     color: rgba(210, 210, 210, 1);
@@ -660,14 +441,200 @@ form div {
     backdrop-filter: blur(4px);
     background-color: #ECF2D02f;
 }
+/* ======= FIN =========== */
+
 
 @media screen and (max-width: 768px) {
+    /* général */
+    :root
+    {
+        font-size: 13px;
+    }
     .container {
         width: 90%;
     }
     .spc-btw {
         flex-direction: column;
     }
+    /* ==FIN== */
+
+
+    /* nav */
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 5rem;
+        flex-direction: column;
+        background-color: #1E0F1C;
+        width: 100%;
+        border-radius: 10px;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+    }
+    .nav-menu.active {
+        left: 0;
+    }
+    .nav-item {
+        margin: 2.5rem 0;
+    }
+   .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    /* ==FIN== */
+
+
+    /* header */
+    header {
+        background-size:cover;
+        background-position:center;
+
+    }
+    header p {
+        font-size: 1.2rem;
+        text-shadow: #000 0px 0px 5px;
+    }
+    h1 {
+        font-size: 4rem;
+        text-shadow: black 0px 0px 2px;
+    }
+    /* ==FIN== */
+
+
+    /* à propos */
+    #apropos {
+        padding-bottom: 50px;
+    }
+    #apropos {
+        height: auto;
+    }
+    .apropos {
+        flex-direction: column;
+        text-align: center;
+    }
+    .apropos p {
+        text-align: center; 
+    }
+    .txtapropos {
+        width: 100%;
+    }
+    .boulanger {
+        width: 100%;
+        height: auto;
+        margin: 60px 0;
+    }
+    h2 {
+        font-size: 2rem;
+    }
+    h3 {
+        font-size: 2rem;
+    }
+    /* ==FIN== */
+
+
+    /* concept */
+    #concept {
+        height: auto;
+        padding: 30px 0 50px 0;
+    }
+    #concept p {
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    .top , .bottum{
+        border-bottom: 1px solid rgba(226, 233, 192, 1) ;
+    }
+    .background-concept{
+        background-color: rgba(30, 15, 28, 1);
+        height: 100%;
+        width: auto;
+    }
+    .text-top{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .text-bottum{
+        display: flex;
+        flex-direction: column;
+    }
+    .topresp1{
+        width: 50%;
+        height: 50%;
+    }
+    .topresp2{
+        width: 50%;
+        height: 50%;
+        text-align: end;
+        margin-left: 50%;
+    }
+    .topresp3{
+        width: 50%;
+        height: 50%;
+    }
+    .bottumresp1{
+        width: 50%;
+        height: 50%;
+        text-align: end;
+        margin-left: 50%;
+    }
+    .bottumresp2{
+        width: 50%;
+        height: 50%;
+    }
+    .bottumresp3{
+        border: none;
+        width: 50%;
+        height: 50%;
+        text-align: end;
+        margin-left: 50%;
+    }
+    .hr{
+        display: none;
+    }
+    /* ==FIN== */
+
+
+    /* products */
+    #products {
+        height: auto;
+        padding: 50px 0;
+    }
+    .products-content {
+        flex-direction: column;
+        height: auto;
+    }
+    .f2p, .f3p {
+        width: 100%;
+        margin: 5px 0;
+    }
+    .f2p .box {
+        margin: 10px 0;
+    }
+    .f3p .box {
+        margin: 10px 0;
+    }
+    /* ==FIN== */
+
+
+    /* parafin */
+    .parafin {
+        height: 20vh;
+    }
+    /* ==FIN== */
+
+
+    /* contact */
     footer {
         height: auto;
     }
@@ -679,18 +646,5 @@ form div {
         width: 100%;
         margin-top: 60px;
     }
-}
-
-/* anime scroll */
-
-.slideIn{
-    transform: translateY(40%);
-    opacity: 0;
-    transition: transform 0.6s ease-in-out,
-    opacity 0.6s ease-in-out;
-}
-
-.slideIn.start{
-    transform: translateY(0%);
-    opacity: 1;
+    /* ==FIN== */
 }
