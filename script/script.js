@@ -28,10 +28,10 @@ function closeHoraires() {
 
 
 // anime scroll
+// if(window.innerWidth>768) {
+    const slidingAnime = document.querySelector('.slideIn')
 
-const slidingAnime = document.querySelector('.slideIn')
-
-window.addEventListener('scroll', () => {
+    window.addEventListener('scroll', () => {
    
     const {scrollTop, clientHeight} =
     document.documentElement;
@@ -44,7 +44,9 @@ window.addEventListener('scroll', () => {
      clientHeight * 0.80) {
          slidingAnime.classList.add('start')
      }
-})
+    })
+// }
+
 
 // loader
 const loader = document.querySelector('.loader');
