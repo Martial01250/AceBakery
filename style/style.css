@@ -463,7 +463,8 @@ hr {
 /* SECTION PARAFIN */
 /* ======================= */
 .parafin {
-    background: url(../images/parafin.png) fixed;
+    background: url(../images/parafin.png) fixed no-repeat;
+    background-size:cover;
     height: 30vh;
     justify-content: center;
     align-items: center;
