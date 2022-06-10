@@ -574,10 +574,10 @@ form div {
     filter: brightness(0.9);
 }
 #horaires {
-    position: fixed;
+    position: absolute;
     display: none;
-    top: 200px;
-    left: 680px;
+    top: 0%;
+    left: 30%;
     background: url(../images/horaire.png);
     width: 550px;
     height: 583px;
@@ -816,10 +816,10 @@ form div {
         margin-top: 60px;
     }
     #horaires {
-        top: 200px;
-        left: 20px;
+        top: 20%;
+        left: 0%;
         background: url(../images/horaire.png) no-repeat center;
-        width: 355px;
+        width: 350px;
         height: 565px;
         background-color: #35372f55;
     }
