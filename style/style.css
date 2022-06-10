@@ -771,6 +771,9 @@ form div {
         height: auto;
         padding: 50px 0;
     }
+    .products {
+        text-align: center;
+    }
     .products-content {
         flex-direction: column;
         height: auto;
