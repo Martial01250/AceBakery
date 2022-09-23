@@ -31,33 +31,24 @@ let media768 = window.matchMedia("(min-width: 768px)");
 
 const slidingAnime = document.querySelector(".slideIn");
 
-const  mediaquerrie = ()=> { if(media768.matches){
-window.addEventListener("scroll", () => {
+function setTopToAnime(arg1) {
   const { scrollTop, clientHeight } = document.documentElement;
-
   const topElemetToTopViewport = slidingAnime.getBoundingClientRect().top;
-
   if (
     scrollTop >
-    (scrollTop + topElemetToTopViewport).toFixed() - clientHeight * 0.8
+    (scrollTop + topElemetToTopViewport).toFixed() - clientHeight * arg1
   ) {
     slidingAnime.classList.add("start");
   }
-})}
-else{
-  window.addEventListener("scroll", () => {
-    const { scrollTop, clientHeight } = document.documentElement;
-  
-    const topElemetToTopViewport = slidingAnime.getBoundingClientRect().top;
-  
-    if (
-      scrollTop >
-      (scrollTop + topElemetToTopViewport).toFixed() - clientHeight * 1.5
-    ) {
-      slidingAnime.classList.add("start");
-    }
-})
-}}
+}
+
+const mediaquerrie = () => {
+  if (media768.matches) {
+    window.addEventListener("scroll", () => setTopToAnime(0.8));
+  } else {
+    window.addEventListener("scroll", () => setTopToAnime(1.5));
+  }
+};
 
 mediaquerrie();
 // loader
@@ -85,8 +76,8 @@ window.addEventListener("load", () => {
 
 noScroll();
 
-windows.addEventListener("reload", (event) => {
-  event.preventDefault();
-  windows.scoll(0, 0);
-  windows.location.reload;
+window.addEventListener("reload", () => {
+  Event.preventDefault();
+  window.scroll(0, 0);
+  window.location.reload;
 });
